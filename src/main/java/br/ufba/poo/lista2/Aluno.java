@@ -22,16 +22,16 @@ public class Aluno {
         this.matricula = matricula;
         this.nome = nome;
     }
+    public String getMatricula(){
+        return matricula;
+    }
     public void setNome (String nome){
         this.nome = nome;
     }
     public String getNome(){
         return nome;  
     }
-    public String getMatricula(){
-        return matricula;
-    }
-    
+
    @Override  
     public boolean equals(Object outroAluno){
         if (this == outroAluno)
@@ -41,7 +41,6 @@ public class Aluno {
         Aluno aluno = (Aluno) outroAluno;
         return Obejects.equals(this.matricula, aluno.matricula);
     }
-
     @Override 
     public int hashCode() {
         return Objects.hash(matricula);
