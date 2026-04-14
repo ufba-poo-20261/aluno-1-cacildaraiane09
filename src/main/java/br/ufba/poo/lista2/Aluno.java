@@ -15,7 +15,7 @@ package br.ufba.poo.lista2;
  */
 public class Aluno {
     private final String matricula;
-    private Stribg nome;
+    private String nome;
     
     public Aluno(String matricula, String nome) {
         this.matricula = matricula;
