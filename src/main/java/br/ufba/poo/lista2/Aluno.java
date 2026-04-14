@@ -40,11 +40,11 @@ public class Aluno {
         if (outroAluno == null || getClass()!= outroAluno.getClass())
             return false;
         Aluno aluno = (Aluno) outroAluno;
-        return Objects.equals(this.matricula, aluno.matricula);
+        return this.matricula.equals(aluno.matricula);
     }
     @Override 
     public int hashCode() {
-        return Objects.hash(matricula);
+        return matricula.hashCode();
     }
     
 }
