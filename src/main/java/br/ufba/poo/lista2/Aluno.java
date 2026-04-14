@@ -41,10 +41,5 @@ public class Aluno {
             return false;
         Aluno aluno = (Aluno) outroAluno;
         return this.matricula.equals(aluno.matricula);
-    }
-    @Override 
-    public int hashCode() {
-        return matricula.hashCode();
-    }
-    
+    }   
 }
