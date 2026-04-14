@@ -33,7 +33,7 @@ public class Aluno {
         return matricula;
     }
    @Override  
-    public boolean equals (Object outroAluno) {
+    public boolean equals(Object outroAluno) {
         if (this == outroAluno)
             return true;
         if (outroAluno == null || getClass() != outroAluno.getClass())
