@@ -13,6 +13,8 @@ package br.ufba.poo.lista2;
  * Assuma, para este exercício, que a classe `Aluno` sempre será instanciada com um
  * número de matrícula e um nome válidos, passados nessa ordem.
  */
+import java.util.Objects;
+
 public class Aluno {
     private final String matricula;
     private String nome;
@@ -37,6 +39,6 @@ public class Aluno {
         if (outroAluno == null || getClass() != outroAluno.getClass())
             return false;
         Aluno aluno = (Aluno) outroAluno;
-        return Obejects.equals(matricula, aluno.matricula);
+        return Obejects.equals(this.matricula, aluno.matricula);
     }
 }
