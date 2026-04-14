@@ -1,5 +1,4 @@
 package br.ufba.poo.lista2;
-
 /**
  * Crie a classe `Aluno`, que possui os atributos `matricula` e `nome` (ambos do
  * tipo `String`), além dos métodos e construtores relevantes de acordo com a
@@ -41,4 +40,3 @@ public class Aluno {
         return Obejects.equals(matricula, aluno.matricula);
     }
 }
- 
