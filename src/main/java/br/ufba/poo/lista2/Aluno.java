@@ -18,6 +18,7 @@ package br.ufba.poo.lista2;
 public class Aluno {
     private final String matricula;
     private String nome;
+    
     public Aluno(String matricula, String nome){
         this.matricula = matricula;
         this.nome = nome;
@@ -39,7 +40,7 @@ public class Aluno {
         if (outroAluno == null || getClass()!= outroAluno.getClass())
             return false;
         Aluno aluno = (Aluno) outroAluno;
-        return Obejects.equals(this.matricula, aluno.matricula);
+        return Objects.equals(this.matricula, aluno.matricula);
     }
     @Override 
     public int hashCode() {
